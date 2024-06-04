@@ -1,0 +1,156 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  min-width: 320px;
+  padding: 18px;
+  border: 3px solid gray;
+  border-radius: 10px;
+}
+
+.navBar a{
+  text-decoration: none;
+  background-color: rgb(94, 98, 215);
+  border: 0px none transparent;
+  border-radius: 8px;
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.navBar a:hover{
+  background-color: rgb(43, 91, 163);
+  color: rgb(255, 255, 255);
+}
+
+.tablaUsers{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.tablaUsers th{
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.tablaUsers th, .tablaUsers td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Estilos para la ventana Usuarios*/
+.ventanaUsuarios{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  margin: 0 auto;
+  min-width: 320px;
+  padding: 1rem;
+  border: 3px solid gray;
+  border-radius: 15px;
+}
+
+.vuser-titulo{
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.vuser-lista{
+  grid-row: 2;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  background-color: rgb(65, 65, 65);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 5px 5px 9px 3px rgb(89, 88, 88);
+}
+
+.userCardInfo{
+  display: inline;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+/* Estilos para la ventana Formulario */
+.ventanaFormulario{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+  margin: 0 auto;
+  justify-content: center;
+  min-width: 320px;
+  padding: 1rem;
+  border: 3px solid gray;
+  border-radius: 15px;
+}
+
+.vform-titulo{
+  grid-column: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.vform-formulario{
+  grid-column: 1;
+  background-color: rgb(65, 65, 65);
+  
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 5px 5px 9px 3px rgb(89, 88, 88);
+  input{
+    width: 80%;
+    background-color: #2a2a2a;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+  }
+}
+
+/* Adaptabilidad a distintas pantallas*/
+@media screen and (max-width: 500px){
+  
+  .vuser-titulo{
+    display: inline;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .vuser-lista{
+    grid-template-columns: auto;
+    gap: 1rem;
+    background-color: rgb(65, 65, 65);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 9px 3px rgb(89, 88, 88);
+  }
+  .ventanaFormulario{
+    grid-template-columns: auto;
+  }
+}
