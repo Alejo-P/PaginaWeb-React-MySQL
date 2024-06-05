@@ -5,9 +5,9 @@ import sequelize from "../database.js";
 // Crear un modelo de usuario
 const userModel = sequelize.define('User', {
     id: {
-        type: DataTypes.STRING,
-        primaryKey: true,
-        allowNull: false
+        type: DataTypes.STRING, // Especificar el tipo de dato
+        primaryKey: true, // Especificar si es clave primaria
+        allowNull: false // Especificar si es un campo requerido (No nulo)
     },
     name: {
         type: DataTypes.STRING,
@@ -22,7 +22,7 @@ const userModel = sequelize.define('User', {
         allowNull: false
     }
 },{
-    tableName: 'users'
+    tableName: 'users' // Nombre de la tabla en la base de datos
 });
 
-export default userModel;
+export default userModel; // Exportar el modelo

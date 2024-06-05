@@ -4,9 +4,10 @@ import { getAllUsersController, getUserByIdController, createUserController } fr
 // Crear una instancia de Router
 const router = Router();
 
-// Rutas
-router.get('/users', getAllUsersController);
-router.get('/users/:id', getUserByIdController);
-router.post('/users', createUserController);
+// Rutas segun se requiera
+router.get('/users', getAllUsersController); // Ruta para obtnener todos los usuarios
+router.get('/users/:id', getUserByIdController); // Ruta para obtener un usuario por su ID
+router.post('/users', createUserController); // Ruta para crear un usuario nuevo
 
+// Exportar el router
 export default router;
