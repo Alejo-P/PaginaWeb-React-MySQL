@@ -1,6 +1,6 @@
 import sequelize from './database.js';
-import User from './models/users_model.js';
 
+// PAra establecer la estructura de la base de datos (Ejecutar solo 1 vez)
 sequelize.sync({ force: true })
     .then(() => {
         console.log('Database & tables created!');

@@ -2,6 +2,7 @@ import pkg from "sequelize";
 const { DataTypes } = pkg;
 import sequelize from "../database.js";
 
+// Crear un modelo de usuario
 const userModel = sequelize.define('User', {
     id: {
         type: DataTypes.STRING,
